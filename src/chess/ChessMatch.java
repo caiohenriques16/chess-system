@@ -113,6 +113,8 @@ public class ChessMatch {
         return (ChessPiece) capturesPiece;
     }
 
+    //Exceptions
+
     private void validateSourcePosition(Position position) {
         if (!board.thereIsAPiece(position)) {
             throw new ChessException("There is no piece on source position");
