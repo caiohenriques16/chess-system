@@ -115,7 +115,7 @@ public class ChessMatch {
 
     private void validateSourcePosition(Position position) {
         if (!board.thereIsAPiece(position)) {
-            throw new BoardException("There is no piece on source position");
+            throw new ChessException("There is no piece on source position");
         }
         if (currentPlayer != ((ChessPiece)board.piece(position)).getColor()){
             throw new ChessException("You can only move your own pieces");
